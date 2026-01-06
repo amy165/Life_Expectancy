@@ -1,115 +1,98 @@
 # Life Expectancy — Exploratory Analysis & Prediction
 
 ## Project overview
-This project explores a  the **life expectancy** datasets provided by the course and builds a simple
-predictive model to understand which factors have the strongest impact on
-life expectancy across countries.
+This project analyzes a dataset of global health indicators to explore relationships
+between socio-economic factors and life expectancy across countries.
 
-The goal was not only to train a model, but mainly to:
-- clean and prepare the data properly
-- explore relationships between variables
-- visualize insights clearly
-- evaluate model performance in a simple and transparent way
+The goal is to clean and prepare the data, perform exploratory data analysis (EDA),
+and build a simple regression model to predict life expectancy.
 
-This project was developed as part of my learning path toward
-Data Analytics / Data Science.
+This work was completed as part of a data science learning path.
 
 Course: https://www.udemy.com/course/ciencia-de-datos-en-python-en-7-dias/
 
 ---
 
 ## Dataset
-The dataset includes country-level indicators such as:
+The dataset used in this notebook, `Life_Expectancy_Data.csv`, was provided as part
+of an online course and is derived from public health data originally compiled by
+the World Health Organization (WHO) and United Nations.
 
-- Life expectancy
-- GDP
-- Health expenditure
-- Education indicators
-- Population metrics
-- Mortality and disease-related variables
+Due to course and dataset licensing restrictions, the data file is **not included** in
+this repository. You can obtain the dataset from the original source or the course
+platform:
 
-- Due to license restrictions, the dataset is not included in this repository.
-Please download it from the course platform and place it inside the folder:
+- Course: https://www.udemy.com/course/ciencia-de-datos-en-python-en-7-dias/) 
+
+Once downloaded, place the CSV file inside a folder called:
 
 /data/Life_Expectancy.csv
 
 ---
 
-## Data cleaning
-Main steps included:
+---
 
-✔ handling missing values  
-✔ checking distributions and outliers  
-✔ renaming columns for clarity  
-✔ converting data types  
-✔ selecting relevant features for modeling  
+## Data Cleaning & Preprocessing
 
-I documented each step inside the notebook to keep the analysis reproducible.
+Inside the notebook, the following steps are performed:
+
+- Identification and treatment of missing values  
+- Feature selection and transformation  
+- Handling of outliers and inconsistencies  
+- Memory usage and data type optimization  
+
+The steps are well-documented in the Jupyter Notebook to ensure reproducibility.
 
 ---
 
-##  Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis
 
-I explored:
+The exploration includes:
 
-- correlations between features and life expectancy
-- relationships through scatter plots and pair plots
-- differences across countries and regions
-- impact of healthcare and economic indicators
+- Correlations between variables and life expectancy  
+- Visualizing trends and distributions  
+- Scatter plots and histograms  
+- Identification of potential predictor variables  
 
-Tools used for visualization:
+Visualizations are built using:
 
-- `Matplotlib`
+- `Matplotlib`  
 - `Seaborn`
 
-The EDA helped identify patterns and select useful variables for modeling.
+---
+
+##  Regression Modeling
+
+A regression model is trained using `scikit-learn`. The modeling workflow includes:
+
+- Splitting the dataset into training and testing sets  
+- Fitting a linear regression model  
+- Evaluating performance with metrics such as R², MAE, and RMSE  
+- Interpreting model results in relation to underlying data patterns
 
 ---
 
-##  Modeling
+##  Tools & Libraries
 
-A simple regression pipeline was implemented using **scikit-learn**.
+This project uses:
 
-Models explored included:
-
-- Linear Regression
-- (optionally) Regularized models / tree-based models, depending on tests
-
-Evaluation metrics:
-
-- **R²**
-- **MAE**
-- **RMSE**
-
-The objective was interpretability rather than maximizing performance at all cost.
-
----
-
-##  Key insights
-Some examples of insights obtained:
-
-- countries with higher investment in healthcare tend to show higher life expectancy
-- economic indicators correlate, but not always linearly
-- some variables appear redundant and required feature selection
-- cleaning and preprocessing had a strong effect on model stability
-
-More details and visualizations are available inside the notebook.
-
----
-
-##  Tech stack
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Python  
+- Jupyter Notebook  
+- Pandas  
+- NumPy  
+- Matplotlib & Seaborn  
 - Scikit-learn
-- Jupyter Notebook
 
 ---
 
-##  How to run
+##  Notes
 
-1. Clone the repository
-2. Install requirements (if needed)
+This project reflects my ability to:
+
+- Prepare and clean real-world datasets  
+- Perform exploratory analysis and feature investigation  
+- Build and evaluate predictive models  
+- Document workflows clearly for others to follow
+
+Feedback and improvements are welcome!
+
